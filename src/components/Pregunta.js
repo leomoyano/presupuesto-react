@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Error from './Error';
 
 
-const Pregunta = ({guardarPresupuesto, guardarRestante}) => {
+const Pregunta = ({guardarPresupuesto, guardarRestante, setMostrarPregunta}) => {
 
 
     //Definit el State
@@ -30,6 +30,7 @@ const Pregunta = ({guardarPresupuesto, guardarRestante}) => {
         setError(false);
         guardarPresupuesto(cantidad);
         guardarRestante(cantidad);
+        setMostrarPregunta(false)
 
     }
 
