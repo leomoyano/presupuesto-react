@@ -18,7 +18,7 @@ function App() {
 
   //UseEffect que actualiza el restante
   useEffect(() => {
-    if(crearGasto) {
+    if (crearGasto) {
 
       //Agrega el nuevo presupuesto
       setGastos([
@@ -26,21 +26,16 @@ function App() {
         gasto
       ])
 
-    //Resta del presupuesto actual
-    const PresupuestoRestante = restante - gasto.cantidad
-    setRestante(PresupuestoRestante);
+      //Resta del presupuesto actual
+      const PresupuestoRestante = restante - gasto.cantidad
+      setRestante(PresupuestoRestante);
 
-    //Resetear a false
-    setCrearGasto(false)
+      //Resetear a false
+      setCrearGasto(false)
     }
 
-  }, [gasto])
+  }, [gasto, crearGasto, restante, gastos])
 
-
-  //Se ejecuta cuando se agrega un nuevo gasto
-  const agregarNuevoGasto = gasto => {
-
-  }
 
   return (
     <div className="container">
@@ -50,8 +45,8 @@ function App() {
         <div className="contenido-principal contenido">
           {mostrarPregunta ? (
             <Pregunta
-              guardarPresupuesto={setPresupuesto}
-              guardarRestante={setRestante}
+              setPresupuesto={setPresupuesto}
+              setRestante={setRestante}
               setMostrarPregunta={setMostrarPregunta}
             />) :
             (
