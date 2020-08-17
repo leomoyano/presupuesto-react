@@ -1,4 +1,4 @@
-## Click [HERE](https://tender-aryabhata-d21e8c.netlify.app/) to watch the project.
+## 👉 Click [HERE](https://tender-aryabhata-d21e8c.netlify.app/) to watch the project.
 
 
 
@@ -34,5 +34,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
+**Note: this is a one-way operation. Once you `eject`, you can’t go back! ⚡
